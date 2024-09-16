@@ -47,7 +47,7 @@ for (const folder of commandsFolders) {
 		const command = require(filePath);
 
 		if ('data' in command && 'execute' in command) {
-			client.commands.set(command.data.name, command)
+			client.commands.set(command.data.name, command);
 		} else {
 			console.log(`${yellowBright(`Encountered an error registering a slash command. The slash command located at ${filePath} is missing required properties.`)}`);
 		}
