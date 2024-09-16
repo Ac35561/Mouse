@@ -1,0 +1,23 @@
+{
+  "name": "mouse",
+  "version": "0.0.0",
+  "description": "",
+  "main": "src/client.js",
+  "scripts": {
+    "test": "nodemon ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ac35561/Mouse.git"
+  },
+  "author": "Ac35561",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/Ac35561/Mouse/issues"
+  },
+  "homepage": "https://github.com/Ac35561/Mouse#readme",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "discord.js": "^14.16.2"
+  }
+}
