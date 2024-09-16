@@ -32,15 +32,15 @@ module.exports = {
 			.setColor('Red')
 
 		if (targetMember.bannable) {
-			targetMember.ban({
-				reason: reason
-			});
-
 			await interaction.reply({
 				embeds: [
 					banEmbed
 				],
 				ephemeral: true
+			});
+			
+			targetMember.ban({
+				reason: reason
 			});
 		} else {
 			const errorEmbed = new EmbedBuilder()
