@@ -5,7 +5,7 @@ const { supportGuild } = require('../../invites.json');
 module.exports = {
 	data: new SlashCommandBuilder()
 		.setName('support')
-		.setDescription('Get an invite to the support guild'),
+		.setDescription('Get an invite to the support guild.'),
 	/**
 	 * 
 	 * @param {CommandInteraction} interaction 

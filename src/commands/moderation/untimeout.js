@@ -3,17 +3,17 @@ const { SlashCommandBuilder, CommandInteraction, EmbedBuilder, PermissionsBitFie
 module.exports = {
 	data: new SlashCommandBuilder()
 		.setName('untimeout')
-		.setDescription('Untimeout a user for a specified amount of minutes.')
+		.setDescription('Untimeout a user in the guild.')
 		.setDefaultMemberPermissions(PermissionsBitField.Flags.ModerateMembers)
 		.addUserOption(option =>
 			option
 				.setName('target')
-				.setDescription('The user you want to kick.')
+				.setDescription('The user you want to untimeout.')
 				.setRequired(true))
 		.addStringOption(option =>
 			option
 				.setName('reason')
-				.setDescription('The reason for the kick.')
+				.setDescription('The reason for the untimeout.')
 				.setRequired(false)),
 	/**
 	 * 

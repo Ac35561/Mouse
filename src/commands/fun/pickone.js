@@ -7,7 +7,7 @@ module.exports = {
 		.addStringOption(option =>
 			option
 				.setName('options')
-				.setDescription('The options you want the bot to pick from. SEPEREATED BY COMMAS (,)(e.g option1,option2,option3')
+				.setDescription('The options you want the bot to pick from. SEPARATED BY COMMAS (,)(e.g option1,option2,option3')
 				.setRequired(true)),
 	/**
 	 * 

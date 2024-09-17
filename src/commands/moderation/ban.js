@@ -3,17 +3,17 @@ const { SlashCommandBuilder, CommandInteraction, EmbedBuilder, PermissionsBitFie
 module.exports = {
 	data: new SlashCommandBuilder()
 		.setName('ban')
-		.setDescription('Bans a user from the server.')
+		.setDescription('Ban a user from the guild.')
 		.setDefaultMemberPermissions(PermissionsBitField.Flags.BanMembers)
 		.addUserOption(option =>
 			option
 				.setName('target')
-				.setDescription('The user you want to kick.')
+				.setDescription('The user you want to ban.')
 				.setRequired(true))
 			.addStringOption(option =>
 			option
 				.setName('reason')
-				.setDescription('The reason for the kick.')
+				.setDescription('The reason for the ban.')
 				.setRequired(false)),
 	/**
 	 * 

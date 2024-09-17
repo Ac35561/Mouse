@@ -12,7 +12,7 @@ function minutesToMilliseconds(minutes) {
 module.exports = {
 	data: new SlashCommandBuilder()
 		.setName('timeout')
-		.setDescription('Timeout a user for a specified amount of minutes.')
+		.setDescription('Timeout a user for a specified amount of minutes in the guild.')
 		.setDefaultMemberPermissions(PermissionsBitField.Flags.ModerateMembers)
 		.addUserOption(option =>
 			option
@@ -27,7 +27,7 @@ module.exports = {
 		.addStringOption(option =>
 			option
 				.setName('reason')
-				.setDescription('The reason for the kick.')
+				.setDescription('The reason for the timeout.')
 				.setRequired(false)),
 	/**
 	 * 

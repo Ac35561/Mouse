@@ -3,7 +3,7 @@ const { SlashCommandBuilder, CommandInteraction, EmbedBuilder } = require('disco
 module.exports = {
 	data: new SlashCommandBuilder()
 		.setName('dice')
-		.setDescription('Rolls a specificed amount of the selected dice.')
+		.setDescription('Rolls a specified amount of the selected dice.')
 		.addStringOption(option =>
 		option
 			.setName('dice-type')
