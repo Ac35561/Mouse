@@ -19,6 +19,7 @@ console.log(`${blueBright(`Attempting to login to the client.`)}`)
 client.login(token);
 
 client.commands = new Collection();
+client.gExpCooldown = new Collection();
 
 const eventsPath = join(__dirname, 'events');
 const eventsFiles = readdirSync(eventsPath).filter(file => file.endsWith('.js'));

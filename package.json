@@ -18,6 +18,7 @@
   "homepage": "https://github.com/Ac35561/Mouse#readme",
   "dependencies": {
     "chalk": "^4.1.2",
-    "discord.js": "^14.16.2"
+    "discord.js": "^14.16.2",
+    "mysql2": "^3.11.3"
   }
 }
