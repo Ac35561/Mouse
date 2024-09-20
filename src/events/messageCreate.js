@@ -40,7 +40,7 @@ module.exports = {
 
 					const modifier = Number(rows[0].modifier);
 
-					let totalExp = Math.round((newExp * modifier) + currentExp);
+					const totalExp = Math.round((newExp * modifier) + currentExp);
 
 					con.query(`UPDATE global_experiance SET experiance='${totalExp}' WHERE userid='${message.author.id}'`);
 				}
