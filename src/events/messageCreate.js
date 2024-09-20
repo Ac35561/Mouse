@@ -19,6 +19,10 @@ module.exports = {
 	 * @param {Message} message 
 	 */
 	execute(message) {
+		if (message.author.bot) {
+			return;
+		}
+
 		// Handle global exp.
 		con.query(`SELECT * FROM global_experiance WHERE userid='${message.author.id}'`, (err, rows) => {
 			if (err) {
