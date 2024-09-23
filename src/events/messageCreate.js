@@ -2,6 +2,10 @@ const { Message, Events  } = require('discord.js');
 
 const { con } = require('../mysql/MySql.js');
 
+/**
+ * Creates a random number between two specified numbers. Used to generate new experiance amounts.
+ * @returns {number}
+ */
 function generateExp() {
 	const min = 3;
 	const max = 9;
